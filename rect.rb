@@ -10,7 +10,7 @@ image = OpenCV::IplImage.load(ARGV[0])
 sub = image.sub_rect(0,0,480,515)
 sub.save_image("./koma/#{ARGV[0]}_1.png")
 
-sub = image.sub_rect(0,525,480,350)
+sub = image.sub_rect(0,555,480,350)
 sub.save_image("./koma/#{ARGV[0]}_2.png")
 
 sub = image.sub_rect(0,950,480,350)
