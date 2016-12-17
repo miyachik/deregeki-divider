@@ -5,6 +5,10 @@ include OpenCV
 image = OpenCV::IplImage.load(ARGV[0])
 template = OpenCV::IplImage.load("template.png")
 
+# Todo
+# 再帰処理化
+# 精度向上
+
 # 1枚目の処理
 
 result = image.match_template(template,:sqdiff_normed)
